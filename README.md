@@ -1,6 +1,6 @@
 # Aethelgard Launcher // Premium Minimalist Android Orchestration Engine
 
-PROPRIETARY AND CONFIDENTIAL // PROPERTY OF ARY LABS CORP. SOFTWARE SYSTEMS
+PROPRIETARY AND CONFIDENTIAL // PROPERTY OF ARY LABS CORP. SOFTWARE SYSTEMS <br>
 DEVELOPER: ALI RIZA YILMAZ // COPYRIGHT © 2026 ALL RIGHTS RESERVED
 
 Aethelgard Launcher is an enterprise-grade, ultra-minimalist text-based Android home application engineered to eliminate digital friction, optimize cognitive load, and maximize battery efficiency on OLED displays. Built entirely with Jetpack Compose and clean architecture pipelines, it provides an implicit unlock of premium focus mitigation tools.
