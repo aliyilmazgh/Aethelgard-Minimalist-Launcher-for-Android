@@ -1,0 +1,6 @@
+{
+  "name": "Aethelgard Launcher",
+  "description": "High-end minimalist, text-based utility launcher for focus optimization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

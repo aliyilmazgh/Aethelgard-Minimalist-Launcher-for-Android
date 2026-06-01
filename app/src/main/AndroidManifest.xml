@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- * PROPRIETARY AND CONFIDENTIAL
+ * PROPERTY OF ARY LABS CORP. SOFTWARE SYSTEMS
+ * DEVELOPER: ALI RIZA YILMAZ
+ * COPYRIGHT © 2026 ALL RIGHTS RESERVED.
+ * UNAUTHORIZED COPYING OR DISTRIBUTION IS STRICTLY PROHIBITED.
+ -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".LockScreenActivity"
+            android:exported="true"
+            android:showOnLockScreen="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.MyApplication"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <service android:name=".AppBlockerService" android:exported="false" />
+    </application>
+
+</manifest>
